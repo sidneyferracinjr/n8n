@@ -1,0 +1,11 @@
+n8n.sidneyferracinjr.com {
+	tls info@sidneyferracinjr.com
+
+	reverse_proxy n8n:5678 {
+		flush_interval -1
+		transport http {
+			versions 1.1
+			compression off
+		}
+	}
+}
