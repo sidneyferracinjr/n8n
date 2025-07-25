@@ -1,0 +1,9 @@
+{
+	email info@sidneyferracinjr.com
+}
+
+n8n.sidneyferracinjr.com {
+	reverse_proxy n8n:5678 {
+		flush_interval -1
+	}
+}
